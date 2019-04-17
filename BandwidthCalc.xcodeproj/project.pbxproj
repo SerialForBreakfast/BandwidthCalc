@@ -8,22 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A8DFB297226693A000FCFCF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DFB296226693A000FCFCF0 /* AppDelegate.swift */; };
-		A8DFB299226693A000FCFCF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DFB298226693A000FCFCF0 /* ViewController.swift */; };
+		A8DFB299226693A000FCFCF0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DFB298226693A000FCFCF0 /* MainVC.swift */; };
 		A8DFB29C226693A000FCFCF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DFB29A226693A000FCFCF0 /* Main.storyboard */; };
 		A8DFB29F226693A000FCFCF0 /* BandwidthCalc.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A8DFB29D226693A000FCFCF0 /* BandwidthCalc.xcdatamodeld */; };
 		A8DFB2A1226693A300FCFCF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8DFB2A0226693A300FCFCF0 /* Assets.xcassets */; };
 		A8DFB2A4226693A300FCFCF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DFB2A2226693A300FCFCF0 /* LaunchScreen.storyboard */; };
+		A8EFFD592266AE18006B8D67 /* DataRateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFFD582266AE18006B8D67 /* DataRateTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A8DFB293226693A000FCFCF0 /* BandwidthCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandwidthCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DFB296226693A000FCFCF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A8DFB298226693A000FCFCF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A8DFB298226693A000FCFCF0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = ../MainVC.swift; sourceTree = "<group>"; };
 		A8DFB29B226693A000FCFCF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A8DFB29E226693A000FCFCF0 /* BandwidthCalc.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BandwidthCalc.xcdatamodel; sourceTree = "<group>"; };
 		A8DFB2A0226693A300FCFCF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8DFB2A3226693A300FCFCF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8DFB2A5226693A300FCFCF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A8EFFD582266AE18006B8D67 /* DataRateTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRateTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +58,9 @@
 		A8DFB295226693A000FCFCF0 /* BandwidthCalc */ = {
 			isa = PBXGroup;
 			children = (
+				A8EFFD572266A69D006B8D67 /* Views */,
 				A8DFB296226693A000FCFCF0 /* AppDelegate.swift */,
-				A8DFB298226693A000FCFCF0 /* ViewController.swift */,
+				A8DFB2AF2266A52E00FCFCF0 /* Controller */,
 				A8DFB29A226693A000FCFCF0 /* Main.storyboard */,
 				A8DFB2A0226693A300FCFCF0 /* Assets.xcassets */,
 				A8DFB2A2226693A300FCFCF0 /* LaunchScreen.storyboard */,
@@ -65,6 +68,22 @@
 				A8DFB29D226693A000FCFCF0 /* BandwidthCalc.xcdatamodeld */,
 			);
 			path = BandwidthCalc;
+			sourceTree = "<group>";
+		};
+		A8DFB2AF2266A52E00FCFCF0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A8DFB298226693A000FCFCF0 /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A8EFFD572266A69D006B8D67 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A8EFFD582266AE18006B8D67 /* DataRateTextField.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8DFB29F226693A000FCFCF0 /* BandwidthCalc.xcdatamodeld in Sources */,
-				A8DFB299226693A000FCFCF0 /* ViewController.swift in Sources */,
+				A8EFFD592266AE18006B8D67 /* DataRateTextField.swift in Sources */,
+				A8DFB299226693A000FCFCF0 /* MainVC.swift in Sources */,
 				A8DFB297226693A000FCFCF0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C52PFKSQPU;
 				INFOPLIST_FILE = BandwidthCalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShowBlender.BandwidthCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -307,6 +328,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C52PFKSQPU;
 				INFOPLIST_FILE = BandwidthCalc/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -314,7 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShowBlender.BandwidthCalc;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
