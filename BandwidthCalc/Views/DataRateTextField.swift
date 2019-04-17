@@ -25,6 +25,7 @@ class DataRateTextField: UITextField {
         textAlignment = .center
         
         if placeholder == nil {
+            print("Placeholder nil")
             placeholder = "Undefined"
         }
         

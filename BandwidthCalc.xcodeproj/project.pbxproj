@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A86AF9A02267AA4B00987AF6 /* DataCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86AF99F2267AA4B00987AF6 /* DataCalc.swift */; };
+		A86AF9A82267AB2500987AF6 /* BandwidthCalcTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86AF9A72267AB2500987AF6 /* BandwidthCalcTests.swift */; };
+		A86AF9AF2267B13400987AF6 /* DataCalc.swift in Sources */ = {isa = PBXBuildFile; fileRef = A86AF99F2267AA4B00987AF6 /* DataCalc.swift */; };
 		A8DFB297226693A000FCFCF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DFB296226693A000FCFCF0 /* AppDelegate.swift */; };
 		A8DFB299226693A000FCFCF0 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DFB298226693A000FCFCF0 /* MainVC.swift */; };
 		A8DFB29C226693A000FCFCF0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8DFB29A226693A000FCFCF0 /* Main.storyboard */; };
@@ -16,7 +19,21 @@
 		A8EFFD592266AE18006B8D67 /* DataRateTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EFFD582266AE18006B8D67 /* DataRateTextField.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		A86AF9AA2267AB2500987AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A8DFB28B226693A000FCFCF0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8DFB292226693A000FCFCF0;
+			remoteInfo = BandwidthCalc;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		A86AF99F2267AA4B00987AF6 /* DataCalc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCalc.swift; sourceTree = "<group>"; };
+		A86AF9A52267AB2500987AF6 /* BandwidthCalcTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BandwidthCalcTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A86AF9A72267AB2500987AF6 /* BandwidthCalcTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandwidthCalcTests.swift; sourceTree = "<group>"; };
+		A86AF9A92267AB2500987AF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8DFB293226693A000FCFCF0 /* BandwidthCalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BandwidthCalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8DFB296226693A000FCFCF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8DFB298226693A000FCFCF0 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainVC.swift; path = ../MainVC.swift; sourceTree = "<group>"; };
@@ -29,6 +46,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		A86AF9A22267AB2500987AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8DFB290226693A000FCFCF0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -39,10 +63,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A86AF99E2267AA2E00987AF6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A86AF99F2267AA4B00987AF6 /* DataCalc.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A86AF9A62267AB2500987AF6 /* BandwidthCalcTests */ = {
+			isa = PBXGroup;
+			children = (
+				A86AF9A72267AB2500987AF6 /* BandwidthCalcTests.swift */,
+				A86AF9A92267AB2500987AF6 /* Info.plist */,
+			);
+			path = BandwidthCalcTests;
+			sourceTree = "<group>";
+		};
 		A8DFB28A226693A000FCFCF0 = {
 			isa = PBXGroup;
 			children = (
 				A8DFB295226693A000FCFCF0 /* BandwidthCalc */,
+				A86AF9A62267AB2500987AF6 /* BandwidthCalcTests */,
 				A8DFB294226693A000FCFCF0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				A8DFB293226693A000FCFCF0 /* BandwidthCalc.app */,
+				A86AF9A52267AB2500987AF6 /* BandwidthCalcTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +101,7 @@
 		A8DFB295226693A000FCFCF0 /* BandwidthCalc */ = {
 			isa = PBXGroup;
 			children = (
+				A86AF99E2267AA2E00987AF6 /* Model */,
 				A8EFFD572266A69D006B8D67 /* Views */,
 				A8DFB2AF2266A52E00FCFCF0 /* Controller */,
 				A8DFB296226693A000FCFCF0 /* AppDelegate.swift */,
@@ -89,6 +133,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		A86AF9A42267AB2500987AF6 /* BandwidthCalcTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A86AF9AC2267AB2500987AF6 /* Build configuration list for PBXNativeTarget "BandwidthCalcTests" */;
+			buildPhases = (
+				A86AF9A12267AB2500987AF6 /* Sources */,
+				A86AF9A22267AB2500987AF6 /* Frameworks */,
+				A86AF9A32267AB2500987AF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A86AF9AB2267AB2500987AF6 /* PBXTargetDependency */,
+			);
+			name = BandwidthCalcTests;
+			productName = BandwidthCalcTests;
+			productReference = A86AF9A52267AB2500987AF6 /* BandwidthCalcTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		A8DFB292226693A000FCFCF0 /* BandwidthCalc */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A8DFB2A8226693A300FCFCF0 /* Build configuration list for PBXNativeTarget "BandwidthCalc" */;
@@ -116,6 +178,10 @@
 				LastUpgradeCheck = 1020;
 				ORGANIZATIONNAME = "Joseph McCraw";
 				TargetAttributes = {
+					A86AF9A42267AB2500987AF6 = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = A8DFB292226693A000FCFCF0;
+					};
 					A8DFB292226693A000FCFCF0 = {
 						CreatedOnToolsVersion = 10.2;
 					};
@@ -135,11 +201,19 @@
 			projectRoot = "";
 			targets = (
 				A8DFB292226693A000FCFCF0 /* BandwidthCalc */,
+				A86AF9A42267AB2500987AF6 /* BandwidthCalcTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		A86AF9A32267AB2500987AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8DFB291226693A000FCFCF0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -153,11 +227,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		A86AF9A12267AB2500987AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A86AF9AF2267B13400987AF6 /* DataCalc.swift in Sources */,
+				A86AF9A82267AB2500987AF6 /* BandwidthCalcTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A8DFB28F226693A000FCFCF0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A8DFB29F226693A000FCFCF0 /* BandwidthCalc.xcdatamodeld in Sources */,
+				A86AF9A02267AA4B00987AF6 /* DataCalc.swift in Sources */,
 				A8EFFD592266AE18006B8D67 /* DataRateTextField.swift in Sources */,
 				A8DFB299226693A000FCFCF0 /* MainVC.swift in Sources */,
 				A8DFB297226693A000FCFCF0 /* AppDelegate.swift in Sources */,
@@ -165,6 +249,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A86AF9AB2267AB2500987AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8DFB292226693A000FCFCF0 /* BandwidthCalc */;
+			targetProxy = A86AF9AA2267AB2500987AF6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A8DFB29A226693A000FCFCF0 /* Main.storyboard */ = {
@@ -186,6 +278,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A86AF9AD2267AB2500987AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C52PFKSQPU;
+				INFOPLIST_FILE = BandwidthCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShowBlender.BandwidthCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BandwidthCalc.app/BandwidthCalc";
+			};
+			name = Debug;
+		};
+		A86AF9AE2267AB2500987AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C52PFKSQPU;
+				INFOPLIST_FILE = BandwidthCalcTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShowBlender.BandwidthCalcTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BandwidthCalc.app/BandwidthCalc";
+			};
+			name = Release;
+		};
 		A8DFB2A6226693A300FCFCF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -343,6 +475,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A86AF9AC2267AB2500987AF6 /* Build configuration list for PBXNativeTarget "BandwidthCalcTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A86AF9AD2267AB2500987AF6 /* Debug */,
+				A86AF9AE2267AB2500987AF6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		A8DFB28E226693A000FCFCF0 /* Build configuration list for PBXProject "BandwidthCalc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
